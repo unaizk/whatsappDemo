@@ -1,4 +1,4 @@
-const CONFIG_ID = "841817205531705";
+const CONFIG_ID = "1380492393991963";
 
 export default function ConnectWhatsapp() {
     // No useEffect needed here anymore!
