@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>whatsapp-demo</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    
+    <!-- 1. Define the init function FIRST -->
+    <script>
+      window.fbAsyncInit = function() {
+        window.FB.init({
+          appId      : '26908342338844827',
+          cookie     : true,
+          xfbml      : false,
+          version    : 'v20.0' // Make sure this matches your app dashboard
+        });
+        console.log("Facebook SDK Initialized from index.html");
+      };
+    </script>
+    
+    <!-- 2. THEN load the SDK -->
+    <script
+        async
+        defer
+        crossorigin="anonymous"
+        src="https://connect.facebook.net/en_US/sdk.js">
+    </script>
+
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
