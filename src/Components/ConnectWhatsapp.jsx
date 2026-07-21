@@ -27,7 +27,7 @@ export default function ConnectWhatsapp() {
                                const sendToBackend = async () => {
                     try {
                         const apiResponse = await fetch(
-                            "http://localhost:8080/api/v1/SocialConnect/oauth/connect",
+                            "https://mysaleappcompanyapi-7lfpakcp7q-el.a.run.app/api/v1/SocialConnect/oauth/connect",
                             {
                                 method: "POST",
                                 headers: {
