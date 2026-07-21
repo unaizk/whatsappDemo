@@ -1,4 +1,4 @@
-const CONFIG_ID = "1380492393991963";
+const CONFIG_ID = "1690371178914179";
 
 export default function ConnectWhatsapp() {
     // No useEffect needed here anymore!
@@ -27,7 +27,7 @@ export default function ConnectWhatsapp() {
                                const sendToBackend = async () => {
                     try {
                         const apiResponse = await fetch(
-                            "https://mysaleappcompanyapi-7lfpakcp7q-el.a.run.app/api/v1/SocialConnect/oauth/connect",
+                            "http://localhost:8080/api/v1/SocialConnect/oauth/connect",
                             {
                                 method: "POST",
                                 headers: {
